@@ -8,13 +8,13 @@
 			background:#ededed;
 			padding:0 20px;
 			margin:0px;
-			font-family: 'Open Sans', Arial, sans-serif;
+			font-family: 'Open Sans', Arial, sans-serif;   /* 优雅降级 */
 
 		}
 		.mynav ul{
 			display:-webkit-box;
 			display:-ms-flexbox;
-			display:flex;
+			display:flex;  /*flex布局*/
 			-webkit-box-pack:center;
 			-ms-flex-pack:center;
 			justify-content: center;
@@ -94,7 +94,6 @@
 				}
 
 			}
-
 			for(var i =0;i<links.length;i++ ) {
 				links[i].addEventListener('click',function(e) {
 					return e.preventDefault();
@@ -113,7 +112,6 @@
 			}
 
 			window.addEventListener('resize',resizeFunc);
-
 		})()
 	</script>
 </body>
